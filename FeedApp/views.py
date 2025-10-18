@@ -69,7 +69,7 @@ def new_post(request):
 
 
 @login_required
-def friendsfee(request):
+def friendsfeed(request):
     comment_count_list = []
     like_count_list = []
     friends = Profile.objects.filter(user=request.user).values('friends')
