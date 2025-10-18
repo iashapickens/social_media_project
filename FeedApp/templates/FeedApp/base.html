@@ -2,15 +2,17 @@
 
 <!doctype html>
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Feed</title>
+    <html lang="en">
+        <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, 
+          shrink-to-fit=no">
+        <title>Feed</title>
 
-    {% bootstrap_css %}
-    {% bootstrap_javascript jquery='full' %}
-  </head>
+        {% bootstrap_css %}
+        {% bootstrap_javascript jquery='full' %}
+
+    </head>
 
     <body>
         <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 border">
@@ -27,10 +29,16 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav_item">
-                    <a class="nav-link" href="{% url 'FeedApp:profile' %}">My Profile</a>
+                    <a class="nav-link" href="{% url 'FeedApp:profile' %}">Profile</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 'FeedApp:friends' %}">Friend Requests</a>
+                <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="{% url 'FeedApp:myfeed' %}">My Feed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'FeedApp:friendsfeed' %}">Friends Feed</a>
                 </li>
             </ul>
 
